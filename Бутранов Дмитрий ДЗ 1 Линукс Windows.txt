@@ -1,0 +1,79 @@
+1) Посмотреть где я == pwd
+
+2) Создать папку == mkdir foldername
+
+3) Зайти в папку == cd foldername
+
+4) Создать 3 папки == mkdir foldername_1 foldername_2 foldername_3 
+
+5) Зайти в любую папку == cd foldername_1
+
+6) Создать 5 файлов (3 txt, 2 json) == touch text.txt text2.txt text3.txt json1.js json2.js
+
+7) Создать 3 папки == mkdir f_1 f_2 f_3
+
+8) Вывести список содержимого папки == ls -la
+
+9) + Открыть любой txt файл == nano text.txt
+
+10) + Написать туда что-нибудь, любой текст === Текст: Какой-нибудь текст
+                                                       ааааааааааааааааа
+                                                       ммммммммммммммммм
+                                                       яяяяяяяяяяяяяяяяя
+                                                       1111111111111111
+                                                       22222222222222222
+                                                       3333333333333333
+
+
+11) + Сохранить и выйти == Ctrl + O Ctrl + X
+
+12) Выйти из папки на уровень выше == cd ../
+
+13) Переместить любые 2 файла, которые вы создали, в любую другую папку ==  mv foldername_1/text.txt foldername_1/text2.txt foldername_2/
+
+14) Скопировать любые 2 файла, которые вы создали, в любую другую папку ==  cp foldername_1/json1.js foldername_1/json2.js foldername_1/f_1/
+
+15) Найти файл по имени == find . -type f -name "json1.*"
+
+16) Посмотреть содержимое в реальном времени == cat text.txt
+
+17) Вывести несколько первых строк из текстового файла == head -n 3 text.txt  Ответ:
+                                                                              Какой-нибудь текст
+                                                                              ааааааааааааааааа
+                                                                              ммммммммммммммммм
+
+18) Вывести несколько последних строк из текстового файла ==  tail -n 3 text.txt Ответ:
+                                                                                 1111111111111111
+                                                                                 22222222222222222
+                                                                                 3333333333333333
+
+19) Посмотреть содержимое длинного файла == less text.txt
+
+20) Вывести дату и время == date 
+
+Задание*
+
+1) Отправить http запрос на сервер == curl http://162.55.220.72:5005/terminal-hw-request
+                                      
+                                      Ответ: {"Intro":"Hello!! This is your the first response from server","Tasks":{"Task_1":"Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)","result":["Your_String","Your_number"]}}
+                                      Запрос: curl "http://162.55.220.72:5005/get_method?name=Dmitry&age=26"
+                                      Ответ: ["Dmitry","26"]
+
+2) Написать скрипт который выполнит автоматически пункты 3,4,5,6,7,8,13 ==       #!/bin/bash
+
+                                                                                 cd foldername
+
+                                                                                 mkdir foldername_1 foldername_2 foldername_3
+
+                                                                                 cd foldername_1
+
+                                                                                 touch text.txt text2.txt text3.txt json1.js json2.js
+
+                                                                                 mkdir f_1 f_2 f_3
+
+                                                                                 ls
+
+                                                                                 cd ../
+
+                                                                                 mv foldername_1/text.txt foldername_1/text2.txt foldername_2/
+
